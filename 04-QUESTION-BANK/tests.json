@@ -1,4 +1,212 @@
 {
   "schemaVersion": 1,
-  "tests": []
+  "tests": [
+    {
+      "id": "botany-ch-001-test",
+      "title": "Botany Chapter 1 – Plant Diversity Basics",
+      "subject": "Botany",
+      "chapterId": "botany-ch-001",
+      "minutes": 8,
+      "questions": [
+        {
+          "question": "Botany किसका वैज्ञानिक अध्ययन है?",
+          "options": [
+            "जंतुओं का",
+            "पौधों का",
+            "खनिजों का",
+            "मौसम का"
+          ],
+          "correctIndex": 1,
+          "explanation": "Botany पौधों का वैज्ञानिक अध्ययन है।",
+          "source": "Chapter 1 reference notes; cross-check with Raven, Biology of Plants."
+        },
+        {
+          "question": "Taxonomy में क्या शामिल है?",
+          "options": [
+            "केवल श्वसन",
+            "पहचान, नामकरण और वर्गीकरण",
+            "केवल कोशिका विभाजन",
+            "केवल पारिस्थितिकी"
+          ],
+          "correctIndex": 1,
+          "explanation": "Taxonomy में identification, nomenclature और classification शामिल हैं।",
+          "source": "Chapter 1 reference notes."
+        },
+        {
+          "question": "Bryophytes में क्या अनुपस्थित होता है?",
+          "options": [
+            "Chlorophyll",
+            "संवहनी ऊतक",
+            "कोशिका",
+            "DNA"
+          ],
+          "correctIndex": 1,
+          "explanation": "Bryophytes में वास्तविक xylem और phloem नहीं होते।",
+          "source": "Chapter 1 reference notes."
+        },
+        {
+          "question": "Pteridophytes किससे प्रजनन करते हैं?",
+          "options": [
+            "बीज",
+            "फल",
+            "Spores",
+            "फूल"
+          ],
+          "correctIndex": 2,
+          "explanation": "Pteridophytes seedless vascular plants हैं और spores बनाते हैं।",
+          "source": "Chapter 1 reference notes."
+        },
+        {
+          "question": "Gymnosperms में किस प्रकार के बीज होते हैं?",
+          "options": [
+            "नग्न बीज",
+            "फल में बंद बीज",
+            "बीज नहीं",
+            "केवल spores"
+          ],
+          "correctIndex": 0,
+          "explanation": "Gymnosperm seeds ovary/fruit में बंद नहीं होते।",
+          "source": "Chapter 1 reference notes."
+        }
+      ]
+    },
+    {
+      "id": "zoology-ch-001-test",
+      "title": "Zoology Chapter 1 – Animal Organisation Basics",
+      "subject": "Zoology",
+      "chapterId": "zoology-ch-001",
+      "minutes": 8,
+      "questions": [
+        {
+          "question": "Ethology किसका अध्ययन है?",
+          "options": [
+            "पादप ऊतक",
+            "पशु व्यवहार",
+            "रासायनिक बंध",
+            "जीवाश्म"
+          ],
+          "correctIndex": 1,
+          "explanation": "Ethology animal behaviour का अध्ययन है।",
+          "source": "Chapter 1 reference notes; Hickman, Integrated Principles of Zoology."
+        },
+        {
+          "question": "Hydra में सामान्यतः कौन-सी symmetry होती है?",
+          "options": [
+            "Bilateral",
+            "Radial",
+            "Asymmetry",
+            "कोई नहीं"
+          ],
+          "correctIndex": 1,
+          "explanation": "Cnidarians जैसे Hydra में radial symmetry होती है।",
+          "source": "Chapter 1 reference notes."
+        },
+        {
+          "question": "Diploblastic जंतुओं में मुख्य germ layers कितनी होती हैं?",
+          "options": [
+            "एक",
+            "दो",
+            "तीन",
+            "चार"
+          ],
+          "correctIndex": 1,
+          "explanation": "Ectoderm और endoderm दो मुख्य germ layers होती हैं।",
+          "source": "Chapter 1 reference notes."
+        },
+        {
+          "question": "Triploblastic में कौन-सी अतिरिक्त layer होती है?",
+          "options": [
+            "Mesoderm",
+            "Chlorophyll",
+            "Cellulose",
+            "Cuticle"
+          ],
+          "correctIndex": 0,
+          "explanation": "Triploblastic animals में ectoderm, mesoderm और endoderm होते हैं।",
+          "source": "Chapter 1 reference notes."
+        },
+        {
+          "question": "Acoelomate का अर्थ है:",
+          "options": [
+            "वास्तविक coelom अनुपस्थित",
+            "दो coelom",
+            "खुला रक्त परिसंचरण",
+            "रीढ़ उपस्थित"
+          ],
+          "correctIndex": 0,
+          "explanation": "Acoelomate में वास्तविक body cavity अनुपस्थित होती है।",
+          "source": "Chapter 1 reference notes."
+        }
+      ]
+    },
+    {
+      "id": "chemistry-ch-001-test",
+      "title": "Chemistry Chapter 1 – Atomic Structure Basics",
+      "subject": "Chemistry",
+      "chapterId": "chemistry-ch-001",
+      "minutes": 8,
+      "questions": [
+        {
+          "question": "Atomic number किसके बराबर होता है?",
+          "options": [
+            "Neutrons",
+            "Protons",
+            "Protons + neutrons",
+            "Mass number"
+          ],
+          "correctIndex": 1,
+          "explanation": "Z नाभिक में proton की संख्या है।",
+          "source": "NCERT Chemistry XI, Structure of Atom; OpenStax Chemistry 2e."
+        },
+        {
+          "question": "तटस्थ परमाणु में किसकी संख्या बराबर होती है?",
+          "options": [
+            "Protons और electrons",
+            "Protons और neutrons",
+            "Electrons और neutrons",
+            "Mass और charge"
+          ],
+          "correctIndex": 0,
+          "explanation": "Neutral atom में कुल positive और negative charge बराबर होता है।",
+          "source": "Chapter 1 reference notes."
+        },
+        {
+          "question": "²³₁₁Na में neutrons कितने हैं?",
+          "options": [
+            "11",
+            "12",
+            "23",
+            "34"
+          ],
+          "correctIndex": 1,
+          "explanation": "N=A−Z=23−11=12.",
+          "source": "Chapter 1 worked example."
+        },
+        {
+          "question": "एक orbital में अधिकतम कितने electrons हो सकते हैं?",
+          "options": [
+            "1",
+            "2",
+            "6",
+            "8"
+          ],
+          "correctIndex": 1,
+          "explanation": "Pauli principle के अनुसार एक orbital में अधिकतम दो विपरीत spin वाले electrons होते हैं।",
+          "source": "NCERT Chemistry XI, Structure of Atom."
+        },
+        {
+          "question": "l=1 किस subshell को दर्शाता है?",
+          "options": [
+            "s",
+            "p",
+            "d",
+            "f"
+          ],
+          "correctIndex": 1,
+          "explanation": "Azimuthal quantum number l=1, p subshell को दर्शाता है।",
+          "source": "NCERT Chemistry XI, Structure of Atom."
+        }
+      ]
+    }
+  ]
 }
