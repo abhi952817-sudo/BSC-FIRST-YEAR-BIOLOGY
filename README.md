@@ -22,7 +22,7 @@
 
 **महत्वपूर्ण:** इस transcription को reference के रूप में रखें। कोई paper/unit `Approved` तभी होगा जब उसे मूल PDF और वर्तमान विश्वविद्यालय syllabus से मिलाया जाए।
 
-## 3. Programme structure chart\n\nतीनों वर्षों और छह semesters का year-wise programme overview, subject flow और exit pathways: [Programme Structure Chart](00-DASHBOARD/PROGRAMME-STRUCTURE.md)।\n\n## 3. विषय और syllabus files
+## 3. Programme structure chart\n\nतीनों वर्षों और छह semesters का year-wise programme overview, subject flow और exit pathways: [Programme Structure Chart](00-DASHBOARD/PROGRAMME-STRUCTURE.md)।\n\n## 4. विषय और syllabus files
 
 | Subject | Syllabus file | Status |
 |---|---|---|
@@ -34,7 +34,7 @@
 हर paper को एक समान format में लिखने के नियम: [Syllabus format standard](00-DASHBOARD/SYLLABUS-FORMAT.md)  
 Chapter learning notes template: [Chapter template](00-DASHBOARD/CHAPTER-TEMPLATE.md)
 
-## 4. Chapter learning format — 15 steps
+## 5. Chapter learning format — 15 steps
 
 हर syllabus unit को learning chapter में बदलते समय यह क्रम अपनाएँ:
 
@@ -56,7 +56,7 @@ Chapter learning notes template: [Chapter template](00-DASHBOARD/CHAPTER-TEMPLAT
 
 इसके साथ जहाँ उपयोगी हों: colourful notes, labelled diagrams, mind map, YouTube lecture links, print-friendly PDF, question bank और revision sheets।
 
-## 5. App content rules
+## 6. App content rules
 
 - Subject IDs: `biochemistry`, `botany`, `zoology`.
 - हर chapter का stable `chapterId` रखें।
@@ -65,7 +65,7 @@ Chapter learning notes template: [Chapter template](00-DASHBOARD/CHAPTER-TEMPLAT
 - Public JSON में रखे MCQ answers को secure exam answer key न मानें।
 - Copyrighted textbooks के लंबे हिस्से verbatim copy न करें।
 
-## 6. Quality and verification checklist
+## 7. Quality and verification checklist
 
 - [ ] Degree-awarding university और college affiliation confirm
 - [ ] 2026–27 official syllabus प्राप्त और source से compare
@@ -78,7 +78,7 @@ Chapter learning notes template: [Chapter template](00-DASHBOARD/CHAPTER-TEMPLAT
 - [ ] Diagrams, videos, mind maps और licences review
 - [ ] Android app में content loading और rendering test
 
-## 7. Next development sequence
+## 8. Next development sequence
 
 1. Source transcription से Biochemistry, Botany और Zoology के papers को अलग-अलग syllabus files में map करना।
 2. हर paper को [Syllabus format standard](00-DASHBOARD/SYLLABUS-FORMAT.md) के अनुसार व्यवस्थित करना।
