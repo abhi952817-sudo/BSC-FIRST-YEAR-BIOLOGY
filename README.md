@@ -254,7 +254,7 @@ A mobile-first Progressive Web App (PWA) foundation is present.
 - [x] Responsive diagram cards with captions, source and licence metadata.
 - [x] Mind-map catalogue with optional image, PDF and structured text nodes.
 - [x] YouTube video embeds through the privacy-enhanced YouTube host where supported, with external link fallback.
-- [x] Browser Print / Save as PDF action for chapter materials.
+- [x] Browser Print / Save as PDF action for chapter materials.\n- [x] Chapter-linked short-answer and long-answer question panels.\n- [x] Interactive revision flashcards with tap-to-reveal answers.
 - [x] MCQ practice engine with timer, question navigation, scoring and answer explanations.
 - [x] Local bookmarks, completion tracking, progress screen, search and revision planner.
 - [x] Light/dark theme and installable PWA shell.
