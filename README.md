@@ -308,3 +308,29 @@ This is the complete first-pass **UI structure**, not yet the finished content e
 6. Test all screens on Android Chrome after enabling GitHub Pages.
 
 Reusable content template: `00-DASHBOARD/CHAPTER-TEMPLATE.md`.
+
+
+## 13. Dynamic Content Engine — Added 2026-11-15
+
+The next PWA layer is now committed:
+
+- [x] Subject-wise JSON chapter indexes for Botany, Zoology and Chemistry.
+- [x] Markdown chapter loader and shared reader; only entries marked `approved` are listed.
+- [x] Search across approved chapter titles and topic tags.
+- [x] JSON-driven diagram and video catalogues.
+- [x] MCQ practice engine with timer, question navigation, timeout submission, scoring and answer review.
+- [x] Local bookmark and completion tracking retained.
+- [x] Service-worker cache version refreshed; successfully opened same-origin content can be cached.
+- [x] Content authoring instructions in `07-SOURCES-AND-LICENCES/CONTENT-SYSTEM.md`.
+
+### Content and release gates
+The three chapter indexes, diagram/video catalogues and question bank are created but intentionally empty. The degree-awarding university and official 2026–27 syllabus still need confirmation, so no chapter titles or questions have been invented. Public JSON test answer keys are visible to visitors; this is a practice-only system, not a secure exam platform. Offline storage is best-effort and local to the browser.
+
+### Remaining release checks
+- [ ] Confirm degree-awarding university and official syllabus.
+- [ ] Add reviewed chapter Markdown and approved index entries.
+- [ ] Add licensed diagrams, sourced lecture links and independently reviewed practice questions.
+- [ ] Enable GitHub Pages (Settings → Pages → Deploy from a branch → main → /(root)).
+- [ ] Test the live site, chapter loading, tests and offline cache on Android Chrome.
+
+See `PWA-SETUP.md` and `07-SOURCES-AND-LICENCES/CONTENT-SYSTEM.md` for publishing and authoring instructions.
