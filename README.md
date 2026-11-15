@@ -265,3 +265,46 @@ A first mobile-first Progressive Web App (PWA) interface has been added to the r
 - [ ] Test installation and offline behaviour on Android Chrome.
 
 **Important:** GitHub Pages can host the static PWA for free. The current service worker caches the app shell only; it does not yet guarantee that every note is available offline. Login, cloud sync and online ranking are not part of this no-backend first version.
+
+
+## 12. Expanded PWA UI Structure
+
+The first complete navigation/UI pass has now been added. The app uses one shared shell and reusable screen renderers rather than a separate codebase for every chapter.
+
+### Screens included in the UI
+- [x] Home dashboard
+- [x] Subject dashboard (Botany, Zoology, Chemistry)
+- [x] Chapter library screen
+- [x] Chapter reader layout preview
+- [x] Diagram gallery screen
+- [x] Video lecture screen
+- [x] MCQ and tests screen
+- [x] Test/learning progress overview
+- [x] Saved items / bookmarks screen
+- [x] Revision planner
+- [x] Settings screen
+- [x] Search screen (currently searches the subject catalogue)
+
+### Interactions included
+- [x] Responsive mobile and desktop layout
+- [x] Bottom navigation and screen navigation
+- [x] Light/dark theme preference
+- [x] Local bookmarks
+- [x] Local completed-item tracking
+- [x] Local data reset control
+- [x] Online/offline status indicator
+- [x] Chapter reader preview and completion action
+- [x] PWA manifest and app-shell service-worker cache
+
+### Important implementation status
+This is the complete first-pass **UI structure**, not yet the finished content engine. Chapter, diagram, video and question-bank screens currently show honest empty states until reviewed material is added. The reader is a layout preview; automatic Markdown loading/rendering, chapter index loading, diagram files, video catalogue, MCQ timer/scoring and full offline content downloads are still pending. Local progress is stored only in the current browser/device; there is no login or cloud sync.
+
+### Next implementation stages
+1. Add a structured chapter index and shared Markdown reader.
+2. Connect subject folders and render verified notes automatically.
+3. Add diagram and video metadata catalogues.
+4. Add reviewed MCQ data, quiz timer, scoring and explanations.
+5. Add full offline caching for selected chapters.
+6. Test all screens on Android Chrome after enabling GitHub Pages.
+
+Reusable content template: `00-DASHBOARD/CHAPTER-TEMPLATE.md`.
