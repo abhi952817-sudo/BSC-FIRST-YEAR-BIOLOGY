@@ -1,4 +1,208 @@
 {
   "schemaVersion": 1,
-  "items": []
+  "items": [
+    {
+      "id": "botany-ch-001-map",
+      "title": "Botany Chapter 1 – Plant Diversity Mind Map",
+      "subject": "botany",
+      "chapterId": "botany-ch-001",
+      "description": "Botany branches and major plant groups; text-based concept map.",
+      "nodes": [
+        {
+          "label": "Botany",
+          "children": [
+            {
+              "label": "Branches",
+              "children": [
+                {
+                  "label": "Morphology"
+                },
+                {
+                  "label": "Anatomy"
+                },
+                {
+                  "label": "Taxonomy"
+                },
+                {
+                  "label": "Physiology"
+                },
+                {
+                  "label": "Ecology"
+                }
+              ]
+            },
+            {
+              "label": "Plant diversity",
+              "children": [
+                {
+                  "label": "Algae"
+                },
+                {
+                  "label": "Bryophytes"
+                },
+                {
+                  "label": "Pteridophytes"
+                },
+                {
+                  "label": "Gymnosperms"
+                },
+                {
+                  "label": "Angiosperms"
+                }
+              ]
+            },
+            {
+              "label": "Nomenclature",
+              "children": [
+                {
+                  "label": "Genus"
+                },
+                {
+                  "label": "Specific epithet"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "source": "Author-created study map based on OpenStax Biology 2e and Raven, Biology of Plants.",
+      "status": "draft"
+    },
+    {
+      "id": "zoology-ch-001-map",
+      "title": "Zoology Chapter 1 – Animal Diversity Mind Map",
+      "subject": "zoology",
+      "chapterId": "zoology-ch-001",
+      "description": "Animal organisation and classification concepts.",
+      "nodes": [
+        {
+          "label": "Zoology",
+          "children": [
+            {
+              "label": "Branches",
+              "children": [
+                {
+                  "label": "Anatomy"
+                },
+                {
+                  "label": "Physiology"
+                },
+                {
+                  "label": "Taxonomy"
+                },
+                {
+                  "label": "Ethology"
+                }
+              ]
+            },
+            {
+              "label": "Body plan",
+              "children": [
+                {
+                  "label": "Organisation level"
+                },
+                {
+                  "label": "Symmetry"
+                },
+                {
+                  "label": "Germ layers"
+                },
+                {
+                  "label": "Coelom"
+                }
+              ]
+            },
+            {
+              "label": "Diversity",
+              "children": [
+                {
+                  "label": "Invertebrates"
+                },
+                {
+                  "label": "Vertebrates"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "source": "Author-created study map based on OpenStax Biology 2e and Hickman, Integrated Principles of Zoology.",
+      "status": "draft"
+    },
+    {
+      "id": "chemistry-ch-001-map",
+      "title": "Chemistry Chapter 1 – Atomic Structure Mind Map",
+      "subject": "chemistry",
+      "chapterId": "chemistry-ch-001",
+      "description": "Atomic particles, models, quantum numbers and electron configuration.",
+      "nodes": [
+        {
+          "label": "Atomic structure",
+          "children": [
+            {
+              "label": "Particles",
+              "children": [
+                {
+                  "label": "Electron"
+                },
+                {
+                  "label": "Proton"
+                },
+                {
+                  "label": "Neutron"
+                }
+              ]
+            },
+            {
+              "label": "Atomic models",
+              "children": [
+                {
+                  "label": "Rutherford"
+                },
+                {
+                  "label": "Bohr"
+                },
+                {
+                  "label": "Quantum model"
+                }
+              ]
+            },
+            {
+              "label": "Quantum numbers",
+              "children": [
+                {
+                  "label": "n"
+                },
+                {
+                  "label": "l"
+                },
+                {
+                  "label": "mₗ"
+                },
+                {
+                  "label": "mₛ"
+                }
+              ]
+            },
+            {
+              "label": "Filling rules",
+              "children": [
+                {
+                  "label": "Aufbau"
+                },
+                {
+                  "label": "Pauli"
+                },
+                {
+                  "label": "Hund"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "source": "Author-created study map based on NCERT Chemistry XI and OpenStax Chemistry 2e.",
+      "status": "draft"
+    }
+  ]
 }
