@@ -22,7 +22,7 @@
 
 **महत्वपूर्ण:** इस transcription को reference के रूप में रखें। कोई paper/unit `Approved` तभी होगा जब उसे मूल PDF और वर्तमान विश्वविद्यालय syllabus से मिलाया जाए।
 
-## 3. विषय और syllabus files
+## 3. Programme structure chart\n\nतीनों वर्षों और छह semesters का year-wise programme overview, subject flow और exit pathways: [Programme Structure Chart](00-DASHBOARD/PROGRAMME-STRUCTURE.md)।\n\n## 3. विषय और syllabus files
 
 | Subject | Syllabus file | Status |
 |---|---|---|
@@ -86,5 +86,5 @@ Chapter learning notes template: [Chapter template](00-DASHBOARD/CHAPTER-TEMPLAT
 4. पहले verified units के learning chapters बनाना।
 5. App में subject-wise syllabus और chapter navigation जोड़ना।
 
-**README version:** 2.0  
+**README version:** 2.1  
 **Last updated:** 2026-11-15
