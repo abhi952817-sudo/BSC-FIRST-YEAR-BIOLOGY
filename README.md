@@ -230,3 +230,38 @@ BSC-FIRST-YEAR-BIOLOGY/
 
 **README version:** 1.1  
 **Last updated:** 2026-11-15
+
+
+---
+
+## 11. Android-style PWA UI — First Foundation
+
+A first mobile-first Progressive Web App (PWA) interface has been added to the repository.
+
+### UI files
+- `index.html` — Home screen and app navigation.
+- `styles.css` — Responsive layout, cards, colours, typography and dark theme.
+- `app.js` — Subject cards, basic search and navigation interactions.
+- `manifest.webmanifest` — Installable PWA metadata.
+- `sw.js` — Service worker for caching the app shell.
+- `assets/icon.svg` — App icon.
+- `PWA-SETUP.md` — Free GitHub Pages publishing and Android installation steps.
+
+### First UI scope
+- Mobile-first home screen.
+- Botany, Zoology and Chemistry subject cards.
+- Search across the initial subject catalogue.
+- Dark mode toggle.
+- Bottom navigation shell.
+- PWA install metadata and basic offline app-shell caching.
+
+### Current status
+- [x] Initial responsive UI files added to main.
+- [x] PWA manifest and service worker added.
+- [ ] Enable GitHub Pages in repository Settings → Pages (main / root).
+- [ ] Confirm official university and syllabus before adding chapter lists.
+- [ ] Build shared Markdown chapter reader and dynamic chapter index.
+- [ ] Add diagrams, MCQ tests, bookmarks and progress tracking.
+- [ ] Test installation and offline behaviour on Android Chrome.
+
+**Important:** GitHub Pages can host the static PWA for free. The current service worker caches the app shell only; it does not yet guarantee that every note is available offline. Login, cloud sync and online ranking are not part of this no-backend first version.
