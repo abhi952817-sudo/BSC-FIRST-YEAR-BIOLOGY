@@ -107,3 +107,35 @@ Images may be included with standard Markdown image syntax: `![Alt text](relativ
 For reliable chapter matching, include the exact chapter ID as `chapterId` in the video, diagram, mind map or test record. A fallback match uses subject + exact chapter title. Use subject IDs `botany`, `zoology`, `chemistry` consistently in catalogue data.
 
 The public JSON test bank contains answer keys in browser-accessible files. These are practice questions only, not secure exam content.
+
+
+## Short/long questions and flashcards
+
+Optional fields on a chapter record in its subject `chapters.json`:
+- `shortQuestions`: array of objects `{ "question": "...", "answer": "Markdown answer" }`
+- `longQuestions`: array of objects `{ "question": "...", "answer": "Markdown answer" }`
+- `flashcards`: array of objects `{ "front": "Recall prompt", "back": "Answer or explanation" }`
+
+Example:
+
+```json
+{
+  "id": "verified-chapter-id",
+  "title": "Verified chapter title",
+  "file": "CHAPTERS/chapter.md",
+  "unit": "Unit 1",
+  "topics": ["Verified topic"],
+  "status": "draft",
+  "shortQuestions": [
+    { "question": "Define the key term.", "answer": "A reviewed answer in Markdown." }
+  ],
+  "longQuestions": [
+    { "question": "Explain the process with a labelled diagram.", "answer": "A structured, sourced answer." }
+  ],
+  "flashcards": [
+    { "front": "Recall prompt", "back": "Concise answer and key point." }
+  ]
+}
+```
+
+Do not add sample questions as if they belong to a real syllabus. Replace these placeholders only with questions mapped to the confirmed university syllabus and reviewed references.
