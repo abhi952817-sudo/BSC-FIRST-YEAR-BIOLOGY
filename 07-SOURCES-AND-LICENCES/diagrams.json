@@ -1,4 +1,35 @@
 {
   "schemaVersion": 1,
-  "items": []
+  "items": [
+    {
+      "id": "botany-ch-001-diagram",
+      "title": "Major Plant Groups – पादप विविधता",
+      "subject": "botany",
+      "chapterId": "botany-ch-001",
+      "image": "01-BOTANY/DIAGRAMS/plant-groups-overview.svg",
+      "caption": "पाँच प्रमुख पादप समूहों की शुरुआती तुलना।",
+      "source": "Original educational schematic created for this study repository; checked against OpenStax Biology 2e and standard botany references.",
+      "licence": "Original repository artwork; educational use."
+    },
+    {
+      "id": "zoology-ch-001-diagram",
+      "title": "Animal Body Plan – जंतु शरीर संगठन",
+      "subject": "zoology",
+      "chapterId": "zoology-ch-001",
+      "image": "02-ZOOLOGY/DIAGRAMS/animal-body-plan-overview.svg",
+      "caption": "Symmetry और तीन germ layers का अवधारणात्मक चित्र।",
+      "source": "Original educational schematic created for this study repository; concepts cross-checked with OpenStax Biology 2e.",
+      "licence": "Original repository artwork; educational use."
+    },
+    {
+      "id": "chemistry-ch-001-diagram",
+      "title": "Atomic Structure – परमाणु की संरचना",
+      "subject": "chemistry",
+      "chapterId": "chemistry-ch-001",
+      "image": "03-CHEMISTRY/DIAGRAMS/atomic-structure-schematic.svg",
+      "caption": "Nucleus और electrons का अत्यंत सरल conceptual schematic; scale और वास्तविक orbit दर्शाने के लिए नहीं।",
+      "source": "Original educational schematic created for this study repository; introductory concepts cross-checked with NCERT Chemistry XI.",
+      "licence": "Original repository artwork; educational use."
+    }
+  ]
 }
