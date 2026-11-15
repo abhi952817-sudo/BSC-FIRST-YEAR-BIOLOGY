@@ -1,12 +1,5 @@
 # PWA Study Hub — Setup & Status
 
-## Current UI foundation
-- Responsive mobile-first home screen.
-- Botany, Zoology and Chemistry subject cards.
-- Search, dark mode and bottom navigation shell.
-- PWA manifest and service worker for installable app shell.
-- GitHub Pages-compatible relative paths.
-
 ## Publish free with GitHub Pages
 1. Open repository Settings.
 2. Open Pages under Code and automation.
@@ -19,12 +12,22 @@
 2. Open browser menu and choose Install app or Add to Home screen.
 3. Launch it from the home screen.
 
-## Current limitations
-- This is the first UI foundation, not the finished learning app.
-- Chapter lists remain placeholders until the official 2026–27 degree-awarding university syllabus is confirmed.
-- Markdown reader, diagrams gallery, MCQ engine, bookmarks and progress tracking are next.
-- Service worker currently caches the app shell; complete offline notes need content caching.
-- GitHub Pages hosts static files only. Login, cross-device sync and online ranking require a backend.
+## Current features
+- Responsive mobile-first UI, subject navigation and search.
+- Dynamic chapter index for Botany, Zoology and Chemistry.
+- Markdown chapter reader; only entries marked approved appear.
+- Diagram and video catalogues driven by JSON.
+- MCQ test engine with countdown, answer selection, automatic timeout, scoring and answer review.
+- Local bookmarks, completed chapter tracking, revision planner and theme.
+- Service worker caches the app shell and same-origin files after successful network access.
+
+## Important limitations
+- Chapter indexes, diagram catalogue, video catalogue and test bank are intentionally empty until reviewed content is supplied.
+- The degree-awarding university and official 2026–27 syllabus are still unconfirmed. Do not invent chapter titles.
+- Public GitHub Pages is not a secure exam platform. MCQ answer keys in public JSON can be viewed by visitors. Do not store confidential tests or private student data here.
+- Offline caching is best-effort after a file has been opened online; it is not a guaranteed full-library download.
+- Progress and bookmarks are stored on the current browser/device only. No login, cloud sync or online ranking.
+- Test the published site and Android Chrome behaviour after Pages is enabled.
 
 ## Content workflow
-Each chapter will be a Markdown file in its subject's CHAPTERS folder. A shared chapter index/loader will be added next so new notes can appear without building a separate screen for every chapter.
+See 07-SOURCES-AND-LICENCES/CONTENT-SYSTEM.md for the exact JSON formats and steps to publish approved chapters, diagrams, video links and practice tests.
