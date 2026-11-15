@@ -77,3 +77,42 @@ Add a reviewed test set and answer explanations.
 - [ ] MCQ answer and explanation independently reviewed.
 - [ ] No copied copyrighted textbook chapter or unlicensed image.
 - [ ] Reviewer and review date recorded.
+
+
+## 16. Colourful Notes Callouts
+
+Use these blocks in the Markdown chapter file. The app renderer will need to support these markers before they appear as coloured cards.
+
+```text
+::: definition
+**परिभाषा:** यहाँ verified definition लिखें।
+:::
+
+::: important
+**परीक्षा के लिए महत्वपूर्ण:** यहाँ जरूरी तथ्य लिखें।
+:::
+
+::: example
+**उदाहरण:** यहाँ सरल उदाहरण लिखें।
+:::
+
+::: term
+**Scientific term:** English term — सरल हिंदी अर्थ।
+:::
+```
+
+## 17. Chapter PDF and Mind Map
+
+- PDF: prepare a print-friendly version of the complete chapter with diagrams, captions and references.
+- Mind map: add a chapter overview image or PDF and register it in `07-SOURCES-AND-LICENCES/mindmaps.json`.
+- Video: register topic-matched YouTube links in `07-SOURCES-AND-LICENCES/videos.json`; keep an external link as fallback if embedding is blocked.
+
+## 18. Final Multi-Format Review
+
+- [ ] Notes readable on a small Android screen.
+- [ ] Coloured callouts render correctly (after reader support is implemented).
+- [ ] Images are labelled, responsive and licensed.
+- [ ] PDF opens and prints without clipped text or diagrams.
+- [ ] Mind map matches the chapter and is readable on mobile.
+- [ ] Video link points to the correct lecture and has an external fallback.
+- [ ] Questions and answer explanations are reviewed.
