@@ -234,103 +234,59 @@ BSC-FIRST-YEAR-BIOLOGY/
 
 ---
 
-## 11. Android-style PWA UI — First Foundation
+## 11. Android PWA and Dynamic Study App
 
-A first mobile-first Progressive Web App (PWA) interface has been added to the repository.
+A mobile-first Progressive Web App (PWA) foundation is present.
 
-### UI files
-- `index.html` — Home screen and app navigation.
-- `styles.css` — Responsive layout, cards, colours, typography and dark theme.
-- `app.js` — Subject cards, basic search and navigation interactions.
-- `manifest.webmanifest` — Installable PWA metadata.
-- `sw.js` — Service worker for caching the app shell.
-- `assets/icon.svg` — App icon.
-- `PWA-SETUP.md` — Free GitHub Pages publishing and Android installation steps.
+- `index.html` — app shell and navigation.
+- `styles.css` — responsive UI, dark theme and study-content styles.
+- `app.js` — dynamic subject, chapter, learning-resource and quiz screens.
+- `manifest.webmanifest`, `sw.js` — install metadata and best-effort offline cache.
+- `assets/icon.svg` — app icon.
 
-### First UI scope
-- Mobile-first home screen.
-- Botany, Zoology and Chemistry subject cards.
-- Search across the initial subject catalogue.
-- Dark mode toggle.
-- Bottom navigation shell.
-- PWA install metadata and basic offline app-shell caching.
+## 12. Current App Features
 
-### Current status
-- [x] Initial responsive UI files added to main.
-- [x] PWA manifest and service worker added.
-- [ ] Enable GitHub Pages in repository Settings → Pages (main / root).
-- [ ] Confirm official university and syllabus before adding chapter lists.
-- [ ] Build shared Markdown chapter reader and dynamic chapter index.
-- [ ] Add diagrams, MCQ tests, bookmarks and progress tracking.
-- [ ] Test installation and offline behaviour on Android Chrome.
+- [x] Home dashboard and Botany, Zoology, Chemistry subject screens.
+- [x] Subject-wise chapter indexes; only `approved` chapters appear.
+- [x] Markdown chapter loader and shared chapter reader.
+- [x] Markdown headings, lists, emphasis, links, images and coloured callout panels.
+- [x] Chapter format navigation: Notes, Diagrams, Mind Maps, Videos and Questions.
+- [x] Responsive diagram cards with captions, source and licence metadata.
+- [x] Mind-map catalogue with optional image, PDF and structured text nodes.
+- [x] YouTube video embeds through the privacy-enhanced YouTube host where supported, with external link fallback.
+- [x] Browser Print / Save as PDF action for chapter materials.
+- [x] MCQ practice engine with timer, question navigation, scoring and answer explanations.
+- [x] Local bookmarks, completion tracking, progress screen, search and revision planner.
+- [x] Light/dark theme and installable PWA shell.
 
-**Important:** GitHub Pages can host the static PWA for free. The current service worker caches the app shell only; it does not yet guarantee that every note is available offline. Login, cloud sync and online ranking are not part of this no-backend first version.
+### PDF behaviour
 
+The chapter reader uses the browser's print engine; it does not yet generate a separately prebuilt PDF file. On Android Chrome, choose **Save as PDF** in the print destination. Printed output includes text and available diagrams/mind-map cards; video players are omitted. Check page breaks and image sizing before relying on a printout.
 
-## 12. Expanded PWA UI Structure
+### Content status — important
 
-The first complete navigation/UI pass has now been added. The app uses one shared shell and reusable screen renderers rather than a separate codebase for every chapter.
+The three chapter indexes, diagram catalogue, video catalogue, mind-map catalogue and question bank are still empty placeholders. The app functionality is wired to these data sources, but actual approved study content has not yet been populated. No syllabus or chapter list should be guessed before the degree-awarding university and official 2026–27 syllabus are confirmed.
 
-### Screens included in the UI
-- [x] Home dashboard
-- [x] Subject dashboard (Botany, Zoology, Chemistry)
-- [x] Chapter library screen
-- [x] Chapter reader layout preview
-- [x] Diagram gallery screen
-- [x] Video lecture screen
-- [x] MCQ and tests screen
-- [x] Test/learning progress overview
-- [x] Saved items / bookmarks screen
-- [x] Revision planner
-- [x] Settings screen
-- [x] Search screen (currently searches the subject catalogue)
+Public JSON test answer keys are visible to visitors. Use this question bank for practice only, never for secure examinations. Bookmarks and progress remain on the current device/browser; there is no account or cloud sync. Offline availability is best-effort, not a guaranteed full-library download.
 
-### Interactions included
-- [x] Responsive mobile and desktop layout
-- [x] Bottom navigation and screen navigation
-- [x] Light/dark theme preference
-- [x] Local bookmarks
-- [x] Local completed-item tracking
-- [x] Local data reset control
-- [x] Online/offline status indicator
-- [x] Chapter reader preview and completion action
-- [x] PWA manifest and app-shell service-worker cache
+## 13. Content Authoring and Quality Gates
 
-### Important implementation status
-This is the complete first-pass **UI structure**, not yet the finished content engine. Chapter, diagram, video and question-bank screens currently show honest empty states until reviewed material is added. The reader is a layout preview; automatic Markdown loading/rendering, chapter index loading, diagram files, video catalogue, MCQ timer/scoring and full offline content downloads are still pending. Local progress is stored only in the current browser/device; there is no login or cloud sync.
+Read `07-SOURCES-AND-LICENCES/CONTENT-SYSTEM.md` and use `00-DASHBOARD/CHAPTER-TEMPLATE.md` for every chapter.
 
-### Next implementation stages
-1. Add a structured chapter index and shared Markdown reader.
-2. Connect subject folders and render verified notes automatically.
-3. Add diagram and video metadata catalogues.
-4. Add reviewed MCQ data, quiz timer, scoring and explanations.
-5. Add full offline caching for selected chapters.
-6. Test all screens on Android Chrome after enabling GitHub Pages.
+- Keep content as `draft` until the official syllabus mapping, scientific accuracy, answer keys, diagram labels, citations and image licences have been checked.
+- Use stable `chapterId` values to connect diagrams, videos, mind maps and tests to the exact chapter.
+- Use subject IDs `botany`, `zoology` and `chemistry` consistently.
+- Keep sources and licences with all diagrams and third-party media.
+- Do not copy copyrighted textbook chapters or publish unreviewed AI-generated facts as approved notes.
 
-Reusable content template: `00-DASHBOARD/CHAPTER-TEMPLATE.md`.
+## 14. Remaining Work and Release Checks
 
+1. Confirm the degree-awarding university and obtain its official B.Sc. First Year 2026–27 syllabus.
+2. Map all Botany, Zoology and Chemistry theory and practical units to chapter indexes.
+3. Build and review the first complete pilot chapter, then repeat the process for the remaining syllabus.
+4. Add sourced diagrams, chapter-matched video lectures, mind maps, question banks and revision cards.
+5. Build a realistic 15-day study schedule from the verified syllabus and available study time.
+6. Enable GitHub Pages and verify the deployment.
+7. Run Android Chrome checks for reader, print-to-PDF, YouTube playback, quiz flow and offline cache.
 
-## 13. Dynamic Content Engine — Added 2026-11-15
-
-The next PWA layer is now committed:
-
-- [x] Subject-wise JSON chapter indexes for Botany, Zoology and Chemistry.
-- [x] Markdown chapter loader and shared reader; only entries marked `approved` are listed.
-- [x] Search across approved chapter titles and topic tags.
-- [x] JSON-driven diagram and video catalogues.
-- [x] MCQ practice engine with timer, question navigation, timeout submission, scoring and answer review.
-- [x] Local bookmark and completion tracking retained.
-- [x] Service-worker cache version refreshed; successfully opened same-origin content can be cached.
-- [x] Content authoring instructions in `07-SOURCES-AND-LICENCES/CONTENT-SYSTEM.md`.
-
-### Content and release gates
-The three chapter indexes, diagram/video catalogues and question bank are created but intentionally empty. The degree-awarding university and official 2026–27 syllabus still need confirmation, so no chapter titles or questions have been invented. Public JSON test answer keys are visible to visitors; this is a practice-only system, not a secure exam platform. Offline storage is best-effort and local to the browser.
-
-### Remaining release checks
-- [ ] Confirm degree-awarding university and official syllabus.
-- [ ] Add reviewed chapter Markdown and approved index entries.
-- [ ] Add licensed diagrams, sourced lecture links and independently reviewed practice questions.
-- [ ] Enable GitHub Pages (Settings → Pages → Deploy from a branch → main → /(root)).
-- [ ] Test the live site, chapter loading, tests and offline cache on Android Chrome.
-
-See `PWA-SETUP.md` and `07-SOURCES-AND-LICENCES/CONTENT-SYSTEM.md` for publishing and authoring instructions.
+The PWA structure is not the same as a completed course. The repository still needs verified syllabus-aligned content and a live-device test pass.
