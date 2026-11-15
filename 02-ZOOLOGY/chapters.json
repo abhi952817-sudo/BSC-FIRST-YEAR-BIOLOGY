@@ -1,4 +1,69 @@
 {
   "subject": "zoology",
-  "chapters": []
+  "chapters": [
+    {
+      "id": "zoology-ch-001",
+      "title": "प्राणी विज्ञान का परिचय एवं जंतु विविधता | Introduction to Zoology and Animal Diversity",
+      "file": "CHAPTERS/zoology-ch-001-introduction-to-zoology-and-animal-diversity.md",
+      "unit": "Reference Module 1 (syllabus mapping pending)",
+      "topics": [
+        "Zoology and its branches",
+        "General characteristics of animals",
+        "Levels of organisation",
+        "Body symmetry",
+        "Germ layers",
+        "Coelom",
+        "Invertebrates and vertebrates",
+        "Binomial nomenclature"
+      ],
+      "status": "draft",
+      "referenceSyllabus": true,
+      "shortQuestions": [
+        {
+          "question": "Zoology की परिभाषा दीजिए।",
+          "answer": "जंतुओं और उनके जीवन, संरचना, कार्य, व्यवहार, विकास तथा पर्यावरण संबंधों का वैज्ञानिक अध्ययन।"
+        },
+        {
+          "question": "Radial और bilateral symmetry में अंतर लिखिए।",
+          "answer": "Radial symmetry में भाग केंद्रीय अक्ष के चारों ओर व्यवस्थित होते हैं; bilateral symmetry में एक प्रमुख तल दाएँ-बाएँ समान भाग बनाता है।"
+        },
+        {
+          "question": "Diploblastic और triploblastic में अंतर क्या है?",
+          "answer": "Diploblastic में ectoderm और endoderm; triploblastic में इनके साथ mesoderm भी होता है।"
+        }
+      ],
+      "longQuestions": [
+        {
+          "question": "जंतुओं के वर्गीकरण में प्रयुक्त प्रमुख आधार समझाइए।",
+          "answer": "Organisation level, symmetry, germ layers, coelom, segmentation, appendages और विकास के आधारों को उदाहरण सहित समझाएँ।"
+        },
+        {
+          "question": "Coelom के आधार पर जंतुओं का वर्गीकरण कीजिए।",
+          "answer": "Acoelomate, pseudocoelomate और coelomate की परिभाषा तथा पारंपरिक उदाहरण लिखें।"
+        }
+      ],
+      "flashcards": [
+        {
+          "front": "Zoology क्या है?",
+          "back": "जंतुओं का वैज्ञानिक अध्ययन।"
+        },
+        {
+          "front": "Ethology क्या पढ़ती है?",
+          "back": "पशु व्यवहार।"
+        },
+        {
+          "front": "Diploblastic में कितनी germ layers?",
+          "back": "दो।"
+        },
+        {
+          "front": "Triploblastic में कितनी germ layers?",
+          "back": "तीन।"
+        },
+        {
+          "front": "Coelom क्या है?",
+          "back": "Mesoderm से अस्तरित वास्तविक देहगुहा।"
+        }
+      ]
+    }
+  ]
 }
