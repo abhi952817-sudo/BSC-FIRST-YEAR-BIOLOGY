@@ -1,4 +1,70 @@
 {
   "subject": "chemistry",
-  "chapters": []
+  "chapters": [
+    {
+      "id": "chemistry-ch-001",
+      "title": "परमाणु की संरचना | Atomic Structure",
+      "file": "CHAPTERS/chemistry-ch-001-atomic-structure.md",
+      "unit": "Reference Module 1 (syllabus mapping pending)",
+      "topics": [
+        "Subatomic particles",
+        "Atomic number and mass number",
+        "Isotopes, isobars and isotones",
+        "Rutherford model",
+        "Bohr model",
+        "Wave-particle duality",
+        "Uncertainty principle",
+        "Quantum numbers",
+        "Electronic configuration"
+      ],
+      "status": "draft",
+      "referenceSyllabus": true,
+      "shortQuestions": [
+        {
+          "question": "Atomic number और mass number में अंतर लिखिए।",
+          "answer": "Atomic number (Z) protons की संख्या है; mass number (A) protons और neutrons का योग है।"
+        },
+        {
+          "question": "Orbit और orbital में अंतर बताइए।",
+          "answer": "Orbit Bohr model की निश्चित पथ-कल्पना है; orbital वह क्षेत्र है जहाँ electron मिलने की प्रायिकता अधिक होती है।"
+        },
+        {
+          "question": "Aufbau principle क्या है?",
+          "answer": "इलेक्ट्रॉन पहले कम ऊर्जा वाले उपलब्ध orbital में भरते हैं।"
+        }
+      ],
+      "longQuestions": [
+        {
+          "question": "Rutherford और Bohr atomic models की तुलना कीजिए।",
+          "answer": "Rutherford के nuclear model, gold foil निष्कर्ष और सीमाएँ; Bohr के quantised energy levels, transitions और सीमाएँ समझाएँ।"
+        },
+        {
+          "question": "चार quantum numbers का वर्णन कीजिए।",
+          "answer": "n, l, m_l और m_s के अर्थ तथा अनुमत मान लिखें।"
+        }
+      ],
+      "flashcards": [
+        {
+          "front": "Atomic number Z?",
+          "back": "नाभिक में protons की संख्या।"
+        },
+        {
+          "front": "Mass number A?",
+          "back": "Protons + neutrons।"
+        },
+        {
+          "front": "N कैसे निकालें?",
+          "back": "N = A − Z।"
+        },
+        {
+          "front": "l=1 किस subshell को बताता है?",
+          "back": "p subshell।"
+        },
+        {
+          "front": "एक orbital में अधिकतम कितने electrons?",
+          "back": "दो, विपरीत spin के साथ।"
+        }
+      ]
+    }
+  ]
 }
