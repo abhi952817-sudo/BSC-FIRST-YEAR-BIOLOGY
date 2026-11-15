@@ -14,34 +14,34 @@ function chapterList(){let a=chapters().filter(c=>c.status==="approved");return 
 function safeUrl(u){try{return ["http:","https:"].includes(new URL(u,location.href).protocol)}catch{return false}}
 function inline(t){
  let x=esc(t);
- x=x.replace(/!\\[([^\\]]*)\\]\\(([^)]+)\\)/g,(m,a,u)=>safeUrl(u)?'<figure class="note-figure"><img loading="lazy" src="'+esc(u)+'" alt="'+a+'"><figcaption>'+a+'</figcaption></figure>':a);
- x=x.replace(/\\*\\*([^*]+)\\*\\*/g,"<strong>$1</strong>").replace(/\\*([^*]+)\\*/g,"<em>$1</em>");
- x=x.replace(/\\[([^\\]]+)\\]\\(([^)]+)\\)/g,(m,a,u)=>safeUrl(u)?'<a href="'+esc(u)+'" target="_blank" rel="noopener">'+a+'</a>':a);
+ x=x.replace(/!\[([^\]]*)\]\(([^)]+)\)/g,(m,a,u)=>safeUrl(u)?'<figure class="note-figure"><img loading="lazy" src="'+esc(u)+'" alt="'+a+'"><figcaption>'+a+'</figcaption></figure>':a);
+ x=x.replace(/\*\*([^*]+)\*\*/g,"<strong>$1</strong>").replace(/\*([^*]+)\*/g,"<em>$1</em>");
+ x=x.replace(/\[([^\]]+)\]\(([^)]+)\)/g,(m,a,u)=>safeUrl(u)?'<a href="'+esc(u)+'" target="_blank" rel="noopener">'+a+'</a>':a);
  return x
 }
 function md(src){
  let out="",list="",code=false,buf=[],callout=null,call=[];
  const close=()=>{if(list){out+="</"+list+">";list=""}};
  const finishCall=()=>{if(callout){out+='<aside class="note-callout '+esc(callout)+'">'+md(call.join("\n"))+"</aside>";callout=null;call=[]}};
- for(let line of src.replace(/\\r/g,"").split("\n")){
+ for(let line of src.replace(/\r/g,"").split("\n")){
   if(line.trim().startsWith(":::")){close();if(!callout){callout=line.trim().slice(3).trim()||"info";call=[]}else finishCall();continue}
   if(callout){call.push(line);continue}
-  if(line.trim().startsWith("```")||line.trim().startsWith("~~~")){close();if(code){out+="<pre><code>"+esc(buf.join("\n"))+"</code></pre>";buf=[]}code=!code;continue}
+  if(line.trim().startsWith("~~~")){close();if(code){out+="<pre><code>"+esc(buf.join("\n"))+"</code></pre>";buf=[]}code=!code;continue}
   if(code){buf.push(line);continue}
-  let h=line.match(/^(#{1,6})\\s+(.+)/);
+  let h=line.match(/^(#{1,6})\s+(.+)/);
   if(h){close();let n=h[1].length;out+="<h"+n+">"+inline(h[2])+"</h"+n+">";continue}
-  if(/^\\s*[-*]\\s+/.test(line)){if(list!=="ul"){close();out+="<ul>";list="ul"}out+="<li>"+inline(line.replace(/^\\s*[-*]\\s+/,""))+"</li>";continue}
-  if(/^\\s*\\d+\\.\\s+/.test(line)){if(list!=="ol"){close();out+="<ol>";list="ol"}out+="<li>"+inline(line.replace(/^\\s*\\d+\\.\\s+/,""))+"</li>";continue}
+  if(/^\s*[-*]\s+/.test(line)){if(list!=="ul"){close();out+="<ul>";list="ul"}out+="<li>"+inline(line.replace(/^\s*[-*]\s+/,""))+"</li>";continue}
+  if(/^\s*\d+\.\s+/.test(line)){if(list!=="ol"){close();out+="<ol>";list="ol"}out+="<li>"+inline(line.replace(/^\s*\d+\.\s+/,""))+"</li>";continue}
   close();if(!line.trim())continue;
   if(line.trim()==="---"){out+='<hr class="note-divider">';continue}
-  if(line.trim().startsWith(">"))out+="<blockquote>"+inline(line.replace(/^\\s*>\\s?/,""))+"</blockquote>";
+  if(line.trim().startsWith(">"))out+="<blockquote>"+inline(line.replace(/^\s*>\s?/,""))+"</blockquote>";
   else out+="<p>"+inline(line)+"</p>"
  }
  close();finishCall();if(code)out+="<pre><code>"+esc(buf.join("\n"))+"</code></pre>";return out
 }
 function youtubeId(url){
  try{let u=new URL(url);if(u.hostname==="youtu.be")return u.pathname.slice(1);
- if(["youtube.com","www.youtube.com","m.youtube.com"].includes(u.hostname)){if(u.pathname==="/watch")return u.searchParams.get("v");let m=u.pathname.match(/\\/(embed|shorts)\\/([^/]+)/);return m?.[2]||null}}catch{}return null
+ if(["youtube.com","www.youtube.com","m.youtube.com"].includes(u.hostname)){if(u.pathname==="/watch")return u.searchParams.get("v");let m=u.pathname.match(/\/(embed|shorts)\/([^/]+)/);return m?.[2]||null}}catch{}return null
 }
 function related(items,c){return items.filter(x=>(x.chapterId&&x.chapterId===c?.id)||((x.subject||"").toLowerCase()===state.subject&&(x.chapter||"").toLowerCase()===(c?.title||"").toLowerCase()))}
 function videoCards(items){return items.length?'<div class="catalog-grid">'+items.map(x=>{let id=youtubeId(x.url);return '<article class="catalog-card">'+(id?'<div class="video-frame"><iframe loading="lazy" src="https://www.youtube-nocookie.com/embed/'+esc(id)+'" title="'+esc(x.title)+'" allow="accelerometer; autoplay; encrypted-media; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div>':'')+'<b>'+esc(x.title)+'</b><p>'+esc(x.topic||"")+'</p><small>'+esc(x.teacher||x.channel||"")+'</small>'+(safeUrl(x.url)?'<a class="text-link" href="'+esc(x.url)+'" target="_blank" rel="noopener">YouTube पर खोलें ↗</a>':'')+'</article>'}).join("")+'</div>':'<p class="empty-inline">इस अध्याय के वीडियो अभी जोड़े नहीं गए हैं।</p>'}
