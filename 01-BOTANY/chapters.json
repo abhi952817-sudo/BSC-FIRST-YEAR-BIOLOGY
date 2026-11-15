@@ -1,4 +1,70 @@
 {
   "subject": "botany",
-  "chapters": []
+  "chapters": [
+    {
+      "id": "botany-ch-001",
+      "title": "परिचय एवं पादप विविधता | Introduction to Botany and Plant Diversity",
+      "file": "CHAPTERS/botany-ch-001-introduction-to-botany-and-plant-diversity.md",
+      "unit": "Reference Module 1 (syllabus mapping pending)",
+      "topics": [
+        "Botany and its branches",
+        "General features of plants",
+        "Algae",
+        "Bryophytes",
+        "Pteridophytes",
+        "Gymnosperms",
+        "Angiosperms",
+        "Taxonomy",
+        "Binomial nomenclature"
+      ],
+      "status": "draft",
+      "referenceSyllabus": true,
+      "shortQuestions": [
+        {
+          "question": "वनस्पति विज्ञान की परिभाषा दीजिए।",
+          "answer": "पौधों और उनसे संबंधित जीवन-प्रक्रियाओं, विविधता, संरचना, कार्य और संबंधों का वैज्ञानिक अध्ययन।"
+        },
+        {
+          "question": "Bryophytes और Pteridophytes में मुख्य अंतर लिखिए।",
+          "answer": "Bryophytes में वास्तविक संवहनी ऊतक नहीं होते; Pteridophytes में xylem और phloem होते हैं। दोनों में बीज नहीं बनते।"
+        },
+        {
+          "question": "द्विनाम पद्धति के नियम लिखिए।",
+          "answer": "पहला शब्द Genus (Capital), दूसरा specific epithet (lowercase); मुद्रण में दोनों italic लिखे जाते हैं।"
+        }
+      ],
+      "longQuestions": [
+        {
+          "question": "पादप जगत के प्रमुख समूहों की तुलना उदाहरण सहित कीजिए।",
+          "answer": "Algae, Bryophytes, Pteridophytes, Gymnosperms और Angiosperms के शरीर संगठन, vascular tissue और बीज/फूल की स्थिति की तुलना करें।"
+        },
+        {
+          "question": "Botany की प्रमुख शाखाओं और उनके अध्ययन क्षेत्र का वर्णन कीजिए।",
+          "answer": "Morphology, Anatomy, Taxonomy, Physiology, Cytology, Genetics, Ecology आदि की परिभाषा व उदाहरण दें।"
+        }
+      ],
+      "flashcards": [
+        {
+          "front": "Botany क्या है?",
+          "back": "पौधों का वैज्ञानिक अध्ययन।"
+        },
+        {
+          "front": "Bryophytes में vascular tissue?",
+          "back": "अनुपस्थित।"
+        },
+        {
+          "front": "Pteridophytes कैसे प्रजनन करते हैं?",
+          "back": "Spores द्वारा; बीज नहीं बनाते।"
+        },
+        {
+          "front": "Gymnosperms की प्रमुख पहचान?",
+          "back": "नग्न बीज।"
+        },
+        {
+          "front": "Angiosperms की प्रमुख पहचान?",
+          "back": "फूल और फल; बीज अंडाशय में बंद।"
+        }
+      ]
+    }
+  ]
 }
